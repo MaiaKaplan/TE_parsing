@@ -79,7 +79,7 @@ for line in infile:
             if (TE_level == 'TEclass' and Seg_TEclass == each):
                 if (name == train_ids):
                     TRAIN.write('\t'.join([chromosome,start,end,name])+'\n')
-                elif(name -- test_ids):
+                elif(name == test_ids):
                     TEST.write('\t'.join([chromosome,start,end,name])+'\n')
                 else:
                     print "Not training or testing set"
@@ -87,14 +87,14 @@ for line in infile:
             elif(TE_level == 'TEorder' and Seg_TEorder == each):
                 if (name == train_ids):
                     TRAIN.write('\t'.join([chromosome,start,end,name])+'\n')
-                elif(name -- test_ids):
+                elif(name == test_ids):
                     TEST.write('\t'.join([chromosome,start,end,name])+'\n')
                 else:
                     print "Not training or testing set"
             elif(TE_level == 'TEsuperfamily' and superFamily == each):
                                 if (name == train_ids):
                     TRAIN.write('\t'.join([chromosome,start,end,name])+'\n')
-                elif(name -- test_ids):
+                elif(name == test_ids):
                     TEST.write('\t'.join([chromosome,start,end,name])+'\n')
                 else:
                     print "Not training or testing set'
